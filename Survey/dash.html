@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dashStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css"
+    integrity="sha512-C7hOmCgGzihKXzyPU/z4nv97W0d9bv4ALuuEbSf6hm93myico9qa0hv4dODThvCsqQUmKmLcJmlpRmCaApr83g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="surList.html">Home</a>
+    <a href="creSurvay.html">Create</a>
+    <a id="status" href="#">Status</a>
+    <a href="signIn.html">logOut</a>
+  </div>
+
+  <div id="myDIV" class="header">
+    <h2>surveys</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span class="addBtn">Add</span>
+  </div>
+  <!-- <label class="allList">total Number of Surveys</label>  -->
+  <table class="myTable">
+    <thead>
+      <tr class="details">
+        <th>Title</th>
+        <th>Created by:</th>
+      </tr>
+    </thead>
+    <tbody id="sur-list"></tbody>
+  </table>
+
+  <div class="form-popup" id="myForm">
+    <form class="form-container">
+
+      <button type="button" class="btn" onclick=openQuestion()>create</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <label id="work">total Number of Surveys</label>
+      <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    </div>
+
+
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src="dashScript.js"></script>
+
+
+</body>
+
+</html>

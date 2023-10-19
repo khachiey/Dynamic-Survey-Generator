@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="listStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="topnav">
+        <a class="active" href="surList.html">Home</a>
+        <a href="signIn.html" >Create</a>
+        <a href="signIn.html">logOut</a>
+      </div>
+
+      <div id="myDIV" class="header">
+        <h1>surveys</h1>
+      </div>
+      
+      <table class="myTable">
+        <thead>
+          <tr class="details">
+            <th>Title</th>
+            <th>view:</th>
+          </tr>
+        </thead>
+        <tbody id="sur-list">
+           
+        </tbody>
+      </table>
+     
+      <div class="form-popup" id="myForm">
+        <form  class="form-container" >
+        
+          <button type="button" class="btn" onclick=openQuestion()>create</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+ 
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div id="model-content" class="modal-content">
+          <span class="close">&times;</span>
+          
+        </div>
+      
+      </div>
+      
+
+
+<script src="listScript.js"></script>
+
+
+
+</body>
+</html>

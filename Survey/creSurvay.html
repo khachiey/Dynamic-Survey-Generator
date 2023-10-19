@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="creSytle.css" />
+    <title>questions</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="surList.html">Create</a>
+        <a href="signIn.html">Logout</a>
+    </div>
+    <div class="container">
+        <div class="forms-container">
+
+            <div class="signin-signup">
+                <form class="sign-in-form">
+                    <h2 class="title">Question</h2>
+                    <div class="input-field">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <input type="text" placeholder="Enter your question" class="question" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-thin fa-list-dropdown"></i>
+                        <select name="qType" id="type">
+                            <option>--select question type</option>
+                            <option class="input">Input-field</option>
+                            <option class="yesNo">Yes/No</option>
+                            <option class="range">Range</option>
+
+
+                        </select>
+                    </div>
+                    <input class="btn" type="submit" value="add" />
+                    <!-- <input class="btn1" type="submit" value="create" /> -->
+                    
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+
+                </div>
+
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="dashScript.js"></script>
+    <script src="creScript.js"></script>
+</body>
+
+</html>
